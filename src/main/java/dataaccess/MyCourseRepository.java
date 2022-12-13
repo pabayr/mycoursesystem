@@ -20,6 +20,7 @@ public interface MyCourseRepository extends BaseRepository<Course, Long> {    //
 
     List<Course> findAllCoursesByNameOrDescription(String searchText);
 
+
     List<Course> findAllCoursesByCourseType(CourseType courseType);
 
     List<Course> findAllRunningCourses();
