@@ -10,7 +10,8 @@ import java.util.List;
 //Das eigentliche DAO-Interface.
 //Extended nur CRUD-Methoden des BaseRepos.
 
-public interface MyCourseRepository extends BaseRepository<Course, Long> {    //Hier werden die spezifischen Typen nun angegeben anstatt T,I
+public interface MyCourseRepository extends BaseRepository<Course, Long> {
+    //Hier werden die spezifischen Typen nun angegeben anstatt T,I
 
     //Kursspezifische Methoden
 

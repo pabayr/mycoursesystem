@@ -13,10 +13,13 @@ import java.util.Optional;
 
 public class MysqlCourseRepository implements MyCourseRepository {
 
+    //Das implementierende Repository, welches die spezifische mysql-Kommunikation realisiert
+
     private Connection con;
 
     public MysqlCourseRepository() throws SQLException, ClassNotFoundException {
         try {
+            //MysqlDatabaseConnection.getConnection initiiert den Singleton der MysqldatabaseConnection-Klasse
             this.con = MysqlDatabaseConnection.getConnection("jdbc:mysql://localhost:3306/kurssystem", "root", "");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
