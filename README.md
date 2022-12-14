@@ -15,3 +15,8 @@ https://de.wikipedia.org/wiki/Object-relational_impedance_mismatch
 Das DAO Pattern übernimmt quasi  die Transformation der aus der Datenquelle(in unserem Fall sqldb)  kommenden Daten in die von der Applikation (Domäne kurssystem in java+jdbc) gewünschte Form.
 
 ![image info](./pictures/image.png)
+
+![image_info](./pictures/Dao_interface.png)
+
+![image_info](./pictures/myCourse.png)
+
